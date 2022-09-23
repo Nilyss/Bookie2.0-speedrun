@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <title>Bookie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="StyleSheet" href="./styles.css" />
+    <link rel="StyleSheet" href="index.css" />
   </head>
   <body>
+    <!-- HEADER -->
 
-  <!-- HEADER -->
-
-  <header class="header">
-        <figure class="header__logoFig">
-            <img src="#" class="header__logoFig__img" alt="logo" />
-        </figure>
+    <header class="header">
+      <figure class="header__logoFig">
+        <img src="#" class="header__logoFig__img" alt="logo" />
+      </figure>
       <nav class="header__nav">
         <ul class="header__nav__ul">
-          <li class="header__nav__ul__li"></li>
-          <li class="header__nav__ul__li"></li>
+          <li class="header__nav__ul__li">Hébergements</li>
+          <li class="header__nav__ul__li">Activités</li>
         </ul>
       </nav>
     </header>
@@ -25,81 +24,80 @@
     <!-- MAIN -->
 
     <main class="main">
+      <!-- **********  SECTION MAIN HEADER TITLE / SEARCH BAR / FILTER ********** -->
 
-        <!-- **********  SECTION MAIN HEADER TITLE / SEARCH BAR / FILTER ********** -->
+      <section class="main__section main__sectionTitle">
+        <!-- TITLE -->
 
-        <section class="main__section main__sectionTitle">
+        <div class="main__sectionTitle__titleWrapper">
+          <h1 class="main__sectionTitle__titleWrapper__title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="main__sectionTitle__titleWrapper__subtitle">
+            En plein centre ville ou en pleine nature
+          </p>
+        </div>
 
-            <!-- TITLE -->
+        <!-- SEARCH BAR -->
 
-            <div class="main__sectionTitle__titleWrapper">
-                <h1 class="main__sectionTitle__titleWrapper__title"></h1>
-                <p class="main__sectionTitle__titleWrapper__subtitle"></p>
-            </div>
+        <div class="main__sectionTitle__searchBarWrapper">
+          <label
+            class="main__sectionTitle__searchBarWrapper__label"
+            for="searchBar"
+          ></label>
+          <input
+            class="main__sectionTitle__searchBarWrapper__input"
+            id="searchBar"
+            name="searchBar"
+            placeholder="Marseille, France"
+            type="text"
+          />
+          <button class="main__sectionTitle__searchBarWrapper__button">
+            Rechercher
+          </button>
+        </div>
 
-            <!-- SEARCH BAR -->
+        <!-- FILTERS -->
 
-            <div class="main__sectionTitle__searchBarWrapper">
-                <label
-                        class="main__sectionTitle__searchBarWrapper__label"
-                        for="searchBar"
-                ></label>
-                <input
-                        class="main__sectionTitle__searchBarWrapper__input"
-                        id="searchBar"
-                        name="searchBar"
-                        type="text" />
-                <button class="main__sectionTitle__searchBarWrapper__button">Rechercher</button>
-            </div>
+        <div class="main__sectionTitle__filterWrapper"></div>
 
-            <!-- FILTERS -->
+        <!-- INFO -->
 
-            <div class="main__sectionTitle__filterWrapper">
+        <div class="main__sectionTitle__infoWrapper"></div>
+      </section>
 
-            </div>
+      <!-- **********  SECTION TOP : LEFT ARTICLE / RIGHT ARTICLE ********** -->
 
-            <!-- INFO -->
+      <section class="main__section main__sectionTopArticles">
+        <article class="main__sectionTopArticles__articleLeft"></article>
+        <article class="main__sectionTopArticles__articleRight"></article>
+      </section>
 
-            <div class="main__sectionTitle__infoWrapper">
+      <!-- **********  SECTION BOTTOM : ARTICLE ********** -->
 
-            </div>
-
-        </section>
-
-        <!-- **********  SECTION TOP : LEFT ARTICLE / RIGHT ARTICLE ********** -->
-
-        <section class="main__section main__sectionTopArticles">
-            <article class="main__sectionTopArticles__articleLeft"></article>
-            <article class="main__sectionTopArticles__articleRight"></article>
-        </section>
-
-        <!-- **********  SECTION BOTTOM : ARTICLE ********** -->
-
-        <section class="main__section main__sectionBottomArticle">
-            <article class="main__sectionBottomArticle__article"></article>
-        </section>
-
-
+      <section class="main__section main__sectionBottomArticle">
+        <article class="main__sectionBottomArticle__article"></article>
+      </section>
     </main>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
-  <footer class="footer">
+    <footer class="footer">
       <nav class="footer__nav">
-          <ul class="footer__nav__ul">
-              <li class="footer__nav__ul__li"></li>
-              <li class="footer__nav__ul__li"></li>
-              <li class="footer__nav__ul__li"></li>
-          </ul>
-          <ul class="footer__nav__ul">
-              <li class="footer__nav__ul__li"></li>
-              <li class="footer__nav__ul__li"></li>
-          </ul>
-          <ul class="footer__nav__ul">
-              <li class="footer__nav__ul__li"></li>
-              <li class="footer__nav__ul__li"></li>
-          </ul>
+        <ul class="footer__nav__ul">
+          <li class="footer__nav__ul__li"></li>
+          <li class="footer__nav__ul__li"></li>
+          <li class="footer__nav__ul__li"></li>
+        </ul>
+        <ul class="footer__nav__ul">
+          <li class="footer__nav__ul__li"></li>
+          <li class="footer__nav__ul__li"></li>
+        </ul>
+        <ul class="footer__nav__ul">
+          <li class="footer__nav__ul__li"></li>
+          <li class="footer__nav__ul__li"></li>
+        </ul>
       </nav>
-  </footer>
+    </footer>
   </body>
 </html>

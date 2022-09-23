@@ -1,0 +1,42 @@
+/* Dev Background colors */
+body {
+  background: black;
+  color: white;
+}
+
+body, *, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ********** HEADER ********** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logoFig {
+}
+
+.header__logoFig__img {
+}
+
+.header__nav {
+}
+
+.header__nav__ul {
+  display: flex;
+}
+
+.header__nav__ul__li {
+    list-style: none;
+    padding: 3em;
+    border-top: 2px solid transparent;
+}
+.header__nav__ul__li:hover {
+    border-top: 2px solid blue;
+}
+
+/* ********** MAIN ********** */
