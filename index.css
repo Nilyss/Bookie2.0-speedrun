@@ -1,13 +1,17 @@
-/* Dev Background colors */
-body {
-  background: black;
-  color: white;
+/* Reset CSS */
+body,
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, *, ::after, ::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Global style */
+
+body {
+  font-family: "Raleway", "sans-serif";
 }
 
 /* ********** HEADER ********** */
@@ -17,11 +21,18 @@ body, *, ::after, ::before {
   justify-content: space-between;
 }
 
+/* Logo */
+
 .header__logoFig {
+  object-fit: cover;
+  padding: 3em;
 }
 
 .header__logoFig__img {
+  width: 100px;
 }
+
+/* Navigation */
 
 .header__nav {
 }
@@ -31,12 +42,184 @@ body, *, ::after, ::before {
 }
 
 .header__nav__ul__li {
-    list-style: none;
-    padding: 3em;
-    border-top: 2px solid transparent;
+  list-style: none;
+  padding: 3em;
+  border-top: 2px solid transparent;
+  font-size: 1em;
 }
 .header__nav__ul__li:hover {
-    border-top: 2px solid blue;
+  border-top: 2px solid blue;
+  cursor: pointer;
+  color: blue;
 }
 
 /* ********** MAIN ********** */
+
+/* All Sections */
+
+.main__section {
+}
+
+.main__sectionTitle {
+  margin-left: 3em;
+}
+
+.main__sectionTopArticles {
+}
+
+.main__sectionBottomArticle {
+}
+
+/* Title */
+
+.main__sectionTitle__titleWrapper {
+  display: flex;
+  flex-flow: column;
+  gap: .3em;
+}
+
+.main__sectionTitle__titleWrapper__title {
+  font-size: 1.37em;
+  font-weight: 700;
+}
+
+.main__sectionTitle__titleWrapper__subtitle {
+  font-size: 1em;
+}
+
+/* Search input */
+
+.main__sectionTitle__searchBarWrapper {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  width: 33%;
+}
+
+.main__sectionTitle__searchBarWrapper__locationIconWrapper {
+  background: lightgrey;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px 0 0 14px;
+}
+
+.main__sectionTitle__searchBarWrapper__locationIconWrapper__icon {
+  font-size: 1.27em;
+
+}
+
+.main__sectionTitle__searchBarWrapper__input {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  border-left: none;
+  border-right: none;
+  font-size: 1.27em;
+  padding: .5em;
+  width: 55%;
+}
+
+.main__sectionTitle__searchBarWrapper__input::placeholder {
+  opacity: 1;
+  color: #000000;
+}
+
+.main__sectionTitle__searchBarWrapper__button--desktop {
+  background: blue;
+  color: #ffffff;
+  border: none;
+  font-size: 1.27em;
+  padding: .5em;
+  border-radius: 0 14px 14px 0;
+  cursor: pointer;
+}
+
+.main__sectionTitle__searchBarWrapper__button--searchIcon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main__sectionTitle__searchBarWrapper__button--desktop {
+    display: none;
+  }
+  .main__sectionTitle__searchBarWrapper__button--searchIcon {
+    display: unset;
+    cursor: pointer;
+  }
+}
+
+/* Filter */
+
+.main__sectionTitle__filterWrapper {
+  margin-bottom: 2em;
+}
+
+.main__sectionTitle__filterWrapper__ul {
+  display: flex;
+  gap: 2em;
+}
+
+.main__sectionTitle__filterWrapper__ul__li {
+  font-size: 1.1em;
+  font-weight: 700;
+  list-style: none;
+  padding: .5em;
+  position: relative;
+}
+
+.main__sectionTitle__filterWrapper__ul__li__icon {
+  color: blue;
+  background: rgb(84, 124, 166);
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  width: 45px;
+  height: 110%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.styleFilter {
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  border-radius: 22px;
+  padding-left: 3em;
+  padding-right: 1em;
+}
+
+/* info */
+
+.main__sectionTitle__infoWrapper {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.main__sectionTitle__infoWrapper__icon {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  color: blue;
+}
+
+.main__sectionTitle__infoWrapper__message {
+  font-size: 1em;
+}
+
+/* ********** FOOTER ********** */
+
+.footer {
+}
+
+/* Nav */
+
+.footer__nav {
+}
+
+.footer__nav__ul {
+}
+
+.footer__nav__ul__li {
+}

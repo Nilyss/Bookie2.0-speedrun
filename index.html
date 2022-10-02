@@ -2,16 +2,40 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Bookie</title>
+    <title>Booki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="StyleSheet" href="index.css" />
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <script
+      src="https://kit.fontawesome.com/65f76cf6ae.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- HEADER -->
 
     <header class="header">
       <figure class="header__logoFig">
-        <img src="#" class="header__logoFig__img" alt="logo" />
+        <img
+          src="./Assets/Images/Booki.png"
+          class="header__logoFig__img"
+          alt="logo"
+        />
       </figure>
       <nav class="header__nav">
         <ul class="header__nav__ul">
@@ -41,6 +65,13 @@
         <!-- SEARCH BAR -->
 
         <div class="main__sectionTitle__searchBarWrapper">
+          <div
+            class="main__sectionTitle__searchBarWrapper__locationIconWrapper"
+          >
+            <i
+              class="main__sectionTitle__searchBarWrapper__locationIconWrapper__icon fa-sharp fa-solid fa-location-dot"
+            ></i>
+          </div>
           <label
             class="main__sectionTitle__searchBarWrapper__label"
             for="searchBar"
@@ -52,18 +83,56 @@
             placeholder="Marseille, France"
             type="text"
           />
-          <button class="main__sectionTitle__searchBarWrapper__button">
+          <button class="main__sectionTitle__searchBarWrapper__button--desktop">
             Rechercher
+          </button>
+          <button
+            class="main__sectionTitle__searchBarWrapper__button--searchIcon"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
 
         <!-- FILTERS -->
 
-        <div class="main__sectionTitle__filterWrapper"></div>
+        <div class="main__sectionTitle__filterWrapper">
+          <ul class="main__sectionTitle__filterWrapper__ul">
+            <li class="main__sectionTitle__filterWrapper__ul__li">Filtres</li>
+            <li class="main__sectionTitle__filterWrapper__ul__li styleFilter">
+              <div class="main__sectionTitle__filterWrapper__ul__li__icon">
+                <i class="fa-solid fa-money-bill"></i>
+              </div>
+              Économique
+            </li>
+            <li class="main__sectionTitle__filterWrapper__ul__li styleFilter">
+              <div class="main__sectionTitle__filterWrapper__ul__li__icon">
+                <i class="fa-solid fa-child-reaching"></i>
+              </div>
+              Familial
+            </li>
+            <li class="main__sectionTitle__filterWrapper__ul__li styleFilter">
+              <div class="main__sectionTitle__filterWrapper__ul__li__icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              Romantique
+            </li>
+            <li class="main__sectionTitle__filterWrapper__ul__li styleFilter">
+              <div class="main__sectionTitle__filterWrapper__ul__li__icon">
+                <i class="fa-solid fa-dog"></i>
+              </div>
+              Animaux autorisés
+            </li>
+          </ul>
+        </div>
 
         <!-- INFO -->
 
-        <div class="main__sectionTitle__infoWrapper"></div>
+        <div class="main__sectionTitle__infoWrapper">
+          <i class="main__sectionTitle__infoWrapper__icon fas fa-info"></i>
+          <p class="main__sectionTitle__infoWrapper__message">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
       </section>
 
       <!-- **********  SECTION TOP : LEFT ARTICLE / RIGHT ARTICLE ********** -->
